@@ -33,52 +33,16 @@
             <br>
             <br>
             <br>
-
           </div>
-          <p>
-            <img width="534" height= "356" scr = "property-ownership.jpg"
-            alt = "House Owener" sizes="(-webkit-min-device-pixel-ratio: 2) 2136px,
-            (min-resolution: 192dpi) 2136px, 1068px">
-          </p>
       </div>
 
+      <p>
+        <img width="534" height= "356" scr = "https://raw.githubusercontent.com/
+        yingzh27/NarrativeVisProj/master/property-ownership.jpg"
+        alt = "House Owener"> <br>
+      </p>
+
       <!-- Click -->
-      <div class="card" style="background-color: transparent;">
-             <button class="btn" onclick="plusDivs(1)">Next ❯</button>
-         </div>
-
-      <!-- Second Grid -->
-      <script>
-      var slideIndex = 0;
-      showDivs(slideIndex);
-
-      function plusDivs(n) {
-          showDivs(slideIndex += n);
-      }
-
-      function currentDiv(n) {
-          showDivs(slideIndex = n);
-      }
-
-      function showDivs(n) {
-
-          var i;
-          // var x = document.getElementsByClassName("grids");
-          var length = 5;
-          var navBtns = document.getElementsByClassName("nav-btn");
-          if (n <= 0) { slideIndex = 0 }
-          for (i = 0; i < navBtns.length; i++) {
-              navBtns[i].className = navBtns[i].className.replace(" active", "");
-          }
-
-          if (n == 1) {
-              window.location.href = "first.html";
-          }
-          navBtns[slideIndex].className += " active";
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-      }
-     </script>
 
       <!-- Third Grid -->
 

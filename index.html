@@ -36,15 +36,29 @@
 
           </div>
           <p>
-            <img scr = "property-ownership.jpg" alt = "House Owener">
+            <img width="1068" height= "713" scr = "property-ownership.jpg"
+            alt = "House Owener" sizes="(-webkit-min-device-pixel-ratio: 2) 2136px,
+            (min-resolution: 192dpi) 2136px, 1068px">
           </p>
       </div>
 
-      <!-- First Grid -->
-
+      <!-- Click -->
+      <div class="card" style="background-color: transparent;">
+             <button class="btn" onclick="plusDivs(1)">Next ❯</button>
+         </div>
 
       <!-- Second Grid -->
-
+      <script>
+       var slideIndex = 0;
+       showDivs(slideIndex);
+           if (n == 1) {
+               window.location.href = "first.html";
+           }
+           navBtns[slideIndex].className += " active";
+           document.body.scrollTop = 0;
+           document.documentElement.scrollTop = 0;
+       }
+     </script>
 
       <!-- Third Grid -->
 

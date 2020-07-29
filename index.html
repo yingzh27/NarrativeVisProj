@@ -49,15 +49,35 @@
 
       <!-- Second Grid -->
       <script>
-       var slideIndex = 0;
-       showDivs(slideIndex);
-           if (n == 1) {
-               window.location.href = "first.html";
-           }
-           navBtns[slideIndex].className += " active";
-           document.body.scrollTop = 0;
-           document.documentElement.scrollTop = 0;
-       }
+      var slideIndex = 0;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+          showDivs(slideIndex += n);
+      }
+
+      function currentDiv(n) {
+          showDivs(slideIndex = n);
+      }
+
+      function showDivs(n) {
+
+          var i;
+          // var x = document.getElementsByClassName("grids");
+          var length = 5;
+          var navBtns = document.getElementsByClassName("nav-btn");
+          if (n <= 0) { slideIndex = 0 }
+          for (i = 0; i < navBtns.length; i++) {
+              navBtns[i].className = navBtns[i].className.replace(" active", "");
+          }
+
+          if (n == 1) {
+              window.location.href = "first.html";
+          }
+          navBtns[slideIndex].className += " active";
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+      }
      </script>
 
       <!-- Third Grid -->
